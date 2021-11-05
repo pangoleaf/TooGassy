@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="eth-favicon.png"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script defer src="config.js"></script>
+    <script defer src="apiKey.js"></script>
+    <script defer src="script.js"></script>
+    <title>Too Gassy?</title>
+  </head>
+  <body>
+    <div id="outer">
+      <nav class="input">
+        <form class="input__form input__form-alert">
+          <label class="input__label">
+            <input class="input__box input__box-alert" size="4" maxlength="4">
+          </label>
+        </form>
+        <div class="input__msg"></div>
+        <form class="input__form input__form-flash">
+          <label class="input__label">
+            <input class="input__box input__box-flash" size="4" maxlength="4">
+          </label>
+        </form>
+      </nav>
+      <div class="data">
+        <div class="data__item data__item-safe">
+          <p class="item__label item__label-safe">Safe</p>
+          <p class="item__value item__value-safe">...</p>
+        </div>
+        <div class="data__item data__item-propose">
+          <p class="item__label item__label-propose">Propose</p>
+          <p class="item__value item__value-propose">...</p>
+        </div>
+        <div class="data__item data__item-fast">
+          <p class="item__label item__label-fast">Fast</p>
+          <p class="item__value item__value-fast">...</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

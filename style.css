@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+    font-family: "Fira Code",sans-serif;
+    color: whitesmoke;
+    height: 100vh;
+    padding: 1rem;
+    background: rgb(72, 96, 52);
+    transition: background-color 1s ease;
+}
+div {
+    padding: 1.4rem;
+}
+p {
+    text-align: center;
+}
+#outer {
+    padding: 0 !important;
+    background: linear-gradient(to right bottom, rgba(72, 96, 52, 0), rgb(38, 41, 42));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.input {
+    display: flex;
+    justify-content: space-between;
+    max-height: 2rem;
+    height: 2rem;
+    width: 100%;
+}
+.input__msg {
+    padding-top: 0.2rem;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+.data {
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.2rem;
+    padding-bottom: 0.8rem;
+    position: relative;
+    float: top;
+}
+.data::before {
+    content: "";
+    background: url("eth.png") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+}
+.input_label {
+    padding: 0.5rem;
+}
+.input__box {
+    color: white;
+    text-align: center;
+    background-color: #000000;
+    opacity: 0.3;
+    border: 1px solid white;
+    border-spacing: 5px;
+    border-radius: 8px;
+    padding: 0.1rem;
+}
+.data__item {
+    position: relative;
+}
+.item__label {
+    font-size: 14px;
+    padding: 0;
+}
+.item__value {
+    font-size: 32px;
+    padding: 0;
+}
